@@ -22,10 +22,10 @@ const Contador = () => {
             <div className="titulo">{contador}</div>
             <div>
                 <button className="botao" onClick={decrementaHandler}>
-                    Diminui somente no último clique (3s)
+                    Diminui somente no último clique (1s)
                 </button>
                 <button className="botao" onClick={incrementaHandler}>
-                    Aumenta somente no último clique
+                    Aumenta
                 </button>
             </div>
         </div>

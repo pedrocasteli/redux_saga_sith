@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { MUDA_COR } from "./redux/layout/actionTypes";
+import { MUDA_COR_AZUL, MUDA_COR_VERDE } from "./redux/layout/actionTypes";
 import "./App.css";
 
 const App = (props) => {
@@ -15,15 +15,15 @@ const App = (props) => {
             <button
                 className="botao"
                 onClick={() => {
-                    funcDispatch({ type: "MUDA_COR", payload: "rosa" });
+                    funcDispatch({ type: "MUDA_COR_ROSA", payload: "rosa" });
                 }}
             >
-                Rosa somente no último clique
+                Rosa por 1 segundo
             </button>
             <button
                 className="botao"
                 onClick={() => {
-                    funcDispatch({ type: MUDA_COR, payload: "" });
+                    funcDispatch({ type: MUDA_COR_AZUL, payload: "" });
                 }}
             >
                 RESET (azul)
@@ -33,10 +33,10 @@ const App = (props) => {
             <button
                 className="botao"
                 onClick={() => {
-                    funcDispatch({ type: MUDA_COR, payload: "verde" });
+                    funcDispatch({ type: MUDA_COR_VERDE, payload: "verde" });
                 }}
             >
-                Verde em cada clique (3s)
+                Verde por 0.5s
             </button>
         </div>
     );
