@@ -1,0 +1,50 @@
+.app {
+    display: flex;
+    justify-content: center;
+    background-color: royalblue;
+    padding: 3rem;
+    color: #ffffff;
+}
+
+.app.rosa {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(224, 39, 163);
+    padding: 3rem;
+    color: #ffffff;
+}
+
+.app.verde {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(39, 224, 48);
+    padding: 3rem;
+    color: #ffffff;
+}
+
+.botao {
+    border: 0.1rem solid #ffffff;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: #ffffff;
+    /* box-shadow: 0.05rem 0.02rem 0.8rem #888787; */
+    transition: all 0.1s;
+}
+
+.botao:hover {
+    border-color: #e4e1e1;
+    background-color: #e4e1e1;
+}
+
+.botao:active {
+    border-color: #cecdcd;
+    background-color: #cecdcd;
+    /* transform: translateY(0.05rem); */
+    /* box-shadow: none; */
+}
+
+.botao:not(:last-child) {
+    margin-right: 1rem;
+}
